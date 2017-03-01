@@ -4,8 +4,8 @@
     "keywords": ["laravel", "commentable", "comment", "threaded", "nested set"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/slynova-org/laravel-commentable/issues",
-        "source": "https://github.com/slynova-org/laravel-commentable"
+        "issues": "https://github.com/gitBC/laravel-commentable/issues",
+        "source": "https://github.com/gitBC/laravel-commentable"
     },
     "authors": [
         {

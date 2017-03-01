@@ -1,12 +1,29 @@
 ![Slynova](https://cloud.githubusercontent.com/assets/2793951/8206037/35841f80-14f6-11e5-8538-b378cd632d28.png)
 
+
+# unmaintained fork of slynova-org/laravel-commentable
+### v1.0.1 hash in composer.lock was at e6717ea12d74d02d7b8389b24a9631d932035000 when downloaded
+
+to **Override the Repo** which composer pulls from you will need to add the repository override to your projects composer.json file:
+
+```
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gitBC/laravel-commentable"
+        }
+    ],
+```
+then run
+
+```
+	$composer update slynova/laravel-commentable
+```
+
 # Laravel-Commentable
 
-[![StyleCI](https://styleci.io/repos/45703619/shield)](https://styleci.io/repos/45703619)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
 [![Total Downloads](https://img.shields.io/packagist/dt/slynova/laravel-commentable.svg?style=flat-square)](https://packagist.org/packages/slynova/laravel-commentable)
-
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/8d9f7ba6-6801-486f-aa04-570855860d57/big.png)](https://insight.sensiolabs.com/projects/8d9f7ba6-6801-486f-aa04-570855860d57)
 
 Laravel Commentable adds polymorphic threaded comments to Laravel 5.1 and above.
 
@@ -27,10 +44,19 @@ This package use Nested Set pattern with [Baum](https://github.com/etrepat/baum)
 
 # <a name="getting-started"></a>Getting Started
 
+0. PLEASE NOTE, this is a fork for version 1.0.1
+
+	```
+    "require": {
+        "slynova/laravel-commentable": "^1.0.1"
+	}
+	```
+
 1. Require the package with [Composer](https://getcomposer.org).
     ```shell
     $ composer require slynova/laravel-commentable
     ```
+
 
 2. Add the package to your application service providers in `config/app.php`.
     ```php
@@ -62,5 +88,5 @@ Nothing has been changed from the first release.
 
 Support follows PSR-2 PHP coding standards, and semantic versioning.
 
-Please report any issue you find in the issues page.
-Pull requests are welcome.
+-- Please report any issue you find in the issues page.
+Pull requests are welcome. --
